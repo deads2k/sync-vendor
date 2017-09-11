@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	if err := syncvendor.RootCmd.Execute(); err != nil {
+	if err := syncvendor.NewCmdSyncBranch(os.Stdout, os.Stderr).Execute(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
