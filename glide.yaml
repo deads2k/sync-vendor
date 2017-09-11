@@ -1,0 +1,8 @@
+package: github.com/deads2k/sync-vendor
+import:
+- package: github.com/spf13/cobra
+  version: master
+- package: github.com/spf13/pflag
+  version: master
+- package: gopkg.in/src-d/go-git.v4
+  version: ^4.0.0-rc9
