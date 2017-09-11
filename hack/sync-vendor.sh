@@ -41,7 +41,8 @@ if [ "${newFromSHA}" == "${startingFromSHA}" ]; then
 fi
 echo "syncing from ${startingFromSHA}..${newFromSHA}"
 # create a clean branch to start from
-git checkout -b "${toBranch}-working" || git branch -D "${toBranch}-working" && git checkout -b "${toBranch}-working"
+git branch -D "${toBranch}-working" || true
+git checkout -b "${toBranch}-working"
 
 pushd "${fromRepoLocation}"
 patchDir="${tmpDir}/patches"
