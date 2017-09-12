@@ -20,6 +20,7 @@ mkdir -p "${toRepoLocation}"
 cd "${fromRepoLocation}"
 # if we already have a git repo, assume it's the right one and get the requested branch
 git rev-parse --is-inside-work-tree || git clone --single-branch --branch=${fromBranch} -- "${fromRepo}" ${fromRepoLocation}
+git fetch --refmap -- origin refs/heads/${fromBranch}:refs/remotes/origin/${fromBranch}
 git checkout ${fromBranch}
 git reset --hard origin/${fromBranch}
 firstFromSHA=$(git log --reverse --oneline  --format='%H' | head -n 1)
