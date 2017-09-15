@@ -49,7 +49,7 @@ pushd "${fromRepoLocation}"
 patchDir="${tmpDir}/patches"
 rm -rf ${patchDir} && mkdir -p "${patchDir}"
 index=0
-for commit in $(git log --format='%H' --no-merges --reverse -- "${startingFromSHA}..${newFromSHA}" "${fromDir}"); do
+for commit in $(git log --format='%H' --no-merges --reverse "${startingFromSHA}..${newFromSHA}" -- "${fromDir}"); do
   git format-patch --raw --start-number=${index} --relative="${fromDir}" "${commit}^..${commit}" -o "${patchDir}"
   let index+=10
 done
