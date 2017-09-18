@@ -27,3 +27,9 @@ apiserver
 ```
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.7.0 fromDir=staging/src/k8s.io/apiserver toRepoName=kubernetes-apiserver toRepo=git@github.com:/openshift/kubernetes-apiserver toBranch=release-1.7.0 hack/sync-vendor.sh
 ```
+
+
+docker/distribution
+```
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/github.com/docker/distribution toRepoName=docker-distribution toRepo=git@github.com:/openshift/docker-distribution toBranch=release-2.6.2 hack/sync-vendor.sh
+```
