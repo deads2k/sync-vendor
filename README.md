@@ -23,9 +23,15 @@ code-generator - because of the multiple renames, we've lost patches so we don't
 ```
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/k8s.io/kubernetes/staging/src/k8s.io/code-generator toRepoName=kubernetes-code-generator toRepo=git@github.com:/openshift/kubernetes-code-generator toBranch=master hack/sync-vendor.sh
 ```
+
 apiserver
 ```
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.7.0 fromDir=staging/src/k8s.io/apiserver toRepoName=kubernetes-apiserver toRepo=git@github.com:/openshift/kubernetes-apiserver toBranch=release-1.7.0 hack/sync-vendor.sh
+```
+
+metrics
+```
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.7.0 fromDir=staging/src/k8s.io/metrics toRepoName=kubernetes-metrics toRepo=git@github.com:/openshift/kubernetes-metrics toBranch=release-1.7.0 hack/sync-vendor.sh
 ```
 
 
@@ -38,3 +44,5 @@ emicklei/go-restful-swagger12
 ```
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/github.com/emicklei/go-restful-swagger12 toRepoName=go-restful-swagger12 toRepo=git@github.com:/openshift/emicklei-go-restful-swagger12 toBranch=release-1.0.1 hack/sync-vendor.sh
 ```
+
+
