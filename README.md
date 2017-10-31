@@ -29,6 +29,11 @@ apiserver
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.7.6 fromDir=staging/src/k8s.io/apiserver toRepoName=kubernetes-apiserver toRepo=git@github.com:/openshift/kubernetes-apiserver toBranch=release-1.7.6 hack/sync-vendor.sh
 ```
 
+kube-aggregator
+```
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.7.6 fromDir=staging/src/k8s.io/kube-aggregator toRepoName=kubernetes-kube-aggregator toRepo=git@github.com:/openshift/kubernetes-kube-aggregator toBranch=release-1.7.6 hack/sync-vendor.sh
+```
+
 apiextensions-apiserver
 ```
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.7.6 fromDir=staging/src/k8s.io/apiextensions-apiserver toRepoName=kubernetes-apiextensions-apiserver toRepo=git@github.com:/openshift/kubernetes-apiextensions-apiserver toBranch=release-1.7.6 hack/sync-vendor.sh
