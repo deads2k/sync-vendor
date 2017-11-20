@@ -57,4 +57,11 @@ emicklei/go-restful-swagger12
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/github.com/emicklei/go-restful-swagger12 toRepoName=go-restful-swagger12 toRepo=git@github.com:/openshift/emicklei-go-restful-swagger12 toBranch=release-1.0.1 hack/sync-vendor.sh
 ```
 
-
+cadvisor - for 3.7
+```
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=release-3.7 fromDir=vendor/github.com/google/cadvisor toRepoName=google-cadvisor toRepo=git@github.com:/openshift/google-cadvisor toBranch=release-0.26.1 hack/sync-vendor.sh
+```
+cadvisor - for 3.8-master
+```
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/github.com/google/cadvisor toRepoName=google-cadvisor toRepo=git@github.com:/openshift/google-cadvisor toBranch=release-0.27.1 hack/sync-vendor.sh
+```
