@@ -65,3 +65,8 @@ cadvisor - for 3.8-master
 ```
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/github.com/google/cadvisor toRepoName=google-cadvisor toRepo=git@github.com:/openshift/google-cadvisor toBranch=release-0.27.1 hack/sync-vendor.sh
 ```
+
+container/images - for 3.8-master
+```
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/github.com/containers/image toRepoName=containers-image toRepo=git@github.com:/openshift/containers-image toBranch=openshift-3.8 hack/sync-vendor.sh
+```
