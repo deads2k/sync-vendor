@@ -52,6 +52,31 @@ tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 
 
 ```
 
+kubernetes - 1.8.5
+```
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=release-3.8 fromDir=vendor/k8s.io/gengo toRepoName=kubernetes-gengo toRepo=git@github.com:/openshift/kubernetes-gengo toBranch=openshift-3.8 hack/sync-vendor.sh
+
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=release-3.8 fromDir=vendor/k8s.io/kubernetes toRepoName=kubernetes toRepo=git@github.com:/openshift/kubernetes toBranch=release-1.8.5 hack/sync-vendor.sh
+
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.8.5 fromDir=staging/src/k8s.io/code-generator toRepoName=kubernetes-code-generator toRepo=git@github.com:/openshift/kubernetes-code-generator toBranch=release-1.8.5 hack/sync-vendor.sh
+
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.8.5 fromDir=staging/src/k8s.io/apimachinery toRepoName=kubernetes-apimachinery toRepo=git@github.com:/openshift/kubernetes-apimachinery toBranch=release-1.8.5 hack/sync-vendor.sh
+
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.8.5 fromDir=staging/src/k8s.io/api toRepoName=kubernetes-api toRepo=git@github.com:/openshift/kubernetes-api toBranch=release-1.8.5 hack/sync-vendor.sh
+
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.8.5 fromDir=staging/src/k8s.io/client-go toRepoName=kubernetes-client-go toRepo=git@github.com:/openshift/kubernetes-client-go toBranch=release-1.8.5 hack/sync-vendor.sh
+
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.8.5 fromDir=staging/src/k8s.io/apiserver toRepoName=kubernetes-apiserver toRepo=git@github.com:/openshift/kubernetes-apiserver toBranch=release-1.8.5 hack/sync-vendor.sh
+
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.8.5 fromDir=staging/src/k8s.io/kube-aggregator toRepoName=kubernetes-kube-aggregator toRepo=git@github.com:/openshift/kubernetes-kube-aggregator toBranch=release-1.8.5 hack/sync-vendor.sh
+
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.8.5 fromDir=staging/src/k8s.io/apiextensions-apiserver toRepoName=kubernetes-apiextensions-apiserver toRepo=git@github.com:/openshift/kubernetes-apiextensions-apiserver toBranch=release-1.8.5 hack/sync-vendor.sh
+
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.8.5 fromDir=staging/src/k8s.io/metrics toRepoName=kubernetes-metrics toRepo=git@github.com:/openshift/kubernetes-metrics toBranch=release-1.8.5 hack/sync-vendor.sh
+
+
+```
+
 kubernetes - 1.8.x
 ```
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=release-3.8 fromDir=vendor/k8s.io/gengo toRepoName=kubernetes-gengo toRepo=git@github.com:/openshift/kubernetes-gengo toBranch=openshift-3.8 hack/sync-vendor.sh
