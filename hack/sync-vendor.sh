@@ -74,5 +74,12 @@ fi
 echo "${newFromSHA}" > ${fromRepoName}.sha
 git add ${fromRepoName}.sha && git commit -m "sync(${fromRepo}): ${newFromSHA}"
 
+
+opts=""
+if [ "${dryRun:-true}" != "false" ]; then
+  echo "Running in dry run mode. export dryRun=false to commit."
+  opts="--dry-run"
+fi
+
 # push the results
-git push origin ${toBranch}-working:${toBranch}
+git push ${opts} origin ${toBranch}-working:${toBranch}
