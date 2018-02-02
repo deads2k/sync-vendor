@@ -8,6 +8,8 @@ kubernetes - 1.9.1
 ```
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/github.com/opencontainers/runc toRepoName=opencontainers-runc toRepo=git@github.com:/openshift/opencontainers-runc toBranch=openshift-3.9 hack/sync-vendor.sh
 
+tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/github.com/google/cadvisor toRepoName=google-cadvisor toRepo=git@github.com:/openshift/google-cadvisor toBranch=release-v0.28.3 hack/sync-vendor.sh
+
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=origin fromRepo=git@github.com:/openshift/origin.git fromBranch=master fromDir=vendor/k8s.io/kubernetes toRepoName=kubernetes toRepo=git@github.com:/openshift/kubernetes toBranch=release-1.9.1 hack/sync-vendor.sh
 
 tmpDir=/home/deads/workspaces/sync-vendor/src/github.com/deads2k/working-dir-02 fromRepoName=kubernetes fromRepo=git@github.com:/openshift/kubernetes.git fromBranch=release-1.9.1 fromDir=staging/src/k8s.io/code-generator toRepoName=kubernetes-code-generator toRepo=git@github.com:/openshift/kubernetes-code-generator toBranch=release-1.9.1 hack/sync-vendor.sh
